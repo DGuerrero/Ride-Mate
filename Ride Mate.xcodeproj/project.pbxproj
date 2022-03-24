@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1C293E6127E8CB28005B04B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C293E6027E8CB28005B04B6 /* AppDelegate.swift */; };
 		1C293E6327E8CB28005B04B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C293E6227E8CB28005B04B6 /* SceneDelegate.swift */; };
-		1C293E6527E8CB28005B04B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C293E6427E8CB28005B04B6 /* ViewController.swift */; };
+		1C293E6527E8CB28005B04B6 /* AroundMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C293E6427E8CB28005B04B6 /* AroundMeViewController.swift */; };
 		1C293E6827E8CB28005B04B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C293E6627E8CB28005B04B6 /* Main.storyboard */; };
 		1C293E6B27E8CB28005B04B6 /* Ride_Mate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C293E6927E8CB28005B04B6 /* Ride_Mate.xcdatamodeld */; };
 		1C293E6D27E8CB2A005B04B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C293E6C27E8CB2A005B04B6 /* Assets.xcassets */; };
@@ -23,6 +23,8 @@
 		1C7359EE27EC8B0800111428 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1C7359ED27EC8B0800111428 /* FirebaseCrashlytics */; };
 		1C7359FA27EC8B0800111428 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 1C7359F927EC8B0800111428 /* FirebasePerformance */; };
 		1C7359FC27EC8B0800111428 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 1C7359FB27EC8B0800111428 /* FirebaseRemoteConfig */; };
+		1C735A0327ECE32A00111428 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C735A0227ECE32A00111428 /* MapKit.framework */; };
+		1C735A0527ECE50100111428 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C735A0427ECE50100111428 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +48,7 @@
 		1C293E5D27E8CB28005B04B6 /* Ride Mate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ride Mate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C293E6027E8CB28005B04B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C293E6227E8CB28005B04B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1C293E6427E8CB28005B04B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1C293E6427E8CB28005B04B6 /* AroundMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AroundMeViewController.swift; sourceTree = "<group>"; };
 		1C293E6727E8CB28005B04B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C293E6A27E8CB28005B04B6 /* Ride_Mate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ride_Mate.xcdatamodel; sourceTree = "<group>"; };
 		1C293E6C27E8CB2A005B04B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,6 +60,8 @@
 		1C293E8427E8CB2A005B04B6 /* Ride_MateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ride_MateUITests.swift; sourceTree = "<group>"; };
 		1C293E8627E8CB2A005B04B6 /* Ride_MateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ride_MateUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1C7359E427EC894900111428 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1C735A0227ECE32A00111428 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1C735A0427ECE50100111428 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 				1C7359FA27EC8B0800111428 /* FirebasePerformance in Frameworks */,
 				1C7359EA27EC8B0800111428 /* FirebaseAppCheck in Frameworks */,
 				1C7359EE27EC8B0800111428 /* FirebaseCrashlytics in Frameworks */,
+				1C735A0327ECE32A00111428 /* MapKit.framework in Frameworks */,
 				1C7359E827EC8B0800111428 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +102,7 @@
 				1C293E7927E8CB2A005B04B6 /* Ride MateTests */,
 				1C293E8327E8CB2A005B04B6 /* Ride MateUITests */,
 				1C293E5E27E8CB28005B04B6 /* Products */,
+				1C735A0127ECE32A00111428 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,7 +121,8 @@
 			children = (
 				1C293E6027E8CB28005B04B6 /* AppDelegate.swift */,
 				1C293E6227E8CB28005B04B6 /* SceneDelegate.swift */,
-				1C293E6427E8CB28005B04B6 /* ViewController.swift */,
+				1C293E6427E8CB28005B04B6 /* AroundMeViewController.swift */,
+				1C735A0427ECE50100111428 /* ProfileViewController.swift */,
 				1C293E6627E8CB28005B04B6 /* Main.storyboard */,
 				1C293E6C27E8CB2A005B04B6 /* Assets.xcassets */,
 				1C293E6E27E8CB2A005B04B6 /* LaunchScreen.storyboard */,
@@ -141,6 +148,14 @@
 				1C293E8627E8CB2A005B04B6 /* Ride_MateUITestsLaunchTests.swift */,
 			);
 			path = "Ride MateUITests";
+			sourceTree = "<group>";
+		};
+		1C735A0127ECE32A00111428 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C735A0227ECE32A00111428 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,7 +301,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C293E6B27E8CB28005B04B6 /* Ride_Mate.xcdatamodeld in Sources */,
-				1C293E6527E8CB28005B04B6 /* ViewController.swift in Sources */,
+				1C293E6527E8CB28005B04B6 /* AroundMeViewController.swift in Sources */,
+				1C735A0527ECE50100111428 /* ProfileViewController.swift in Sources */,
 				1C293E6127E8CB28005B04B6 /* AppDelegate.swift in Sources */,
 				1C293E6327E8CB28005B04B6 /* SceneDelegate.swift in Sources */,
 			);

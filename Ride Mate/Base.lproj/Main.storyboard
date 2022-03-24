@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xAR-sC-7Rw">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -8,20 +8,66 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Around Me-->
+        <scene sceneID="ALw-cg-O6t">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ride_Mate" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="tSb-5o-YtD" customClass="AroundMeViewController" customModule="Ride_Mate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d3o-ku-EeV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="goZ-SO-wfM">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VrM-p5-enG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="goZ-SO-wfM" firstAttribute="bottom" secondItem="VrM-p5-enG" secondAttribute="bottom" id="3Mh-nT-vxf"/>
+                            <constraint firstItem="goZ-SO-wfM" firstAttribute="trailing" secondItem="VrM-p5-enG" secondAttribute="trailing" id="3uv-ly-tug"/>
+                            <constraint firstItem="goZ-SO-wfM" firstAttribute="top" secondItem="VrM-p5-enG" secondAttribute="top" id="RZn-gQ-9fy"/>
+                            <constraint firstItem="goZ-SO-wfM" firstAttribute="leading" secondItem="VrM-p5-enG" secondAttribute="leading" id="Zg5-VX-VjG"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Around Me" id="a4Y-YQ-BKp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ojl-iy-9je" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756.52173913043487" y="89.732142857142847"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="Lqc-NS-jyM">
+            <objects>
+                <viewController id="FSZ-AZ-6uQ" customClass="ProfileViewController" customModule="Ride_Mate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EbX-zF-hke">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="qpT-tc-mYi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="o2l-cc-OLt"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vmK-by-yB5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-16" y="91"/>
+            <point key="canvasLocation" x="1436" y="90"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="vVj-aM-q6D">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="xAR-sC-7Rw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8pP-52-YFB">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="tSb-5o-YtD" kind="relationship" relationship="viewControllers" id="MUQ-F2-8A4"/>
+                        <segue destination="FSZ-AZ-6uQ" kind="relationship" relationship="viewControllers" id="wRn-qj-D2Z"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g2M-8n-qis" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17.39130434782609" y="90.401785714285708"/>
         </scene>
     </scenes>
     <resources>
