@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "main-job"
-          command: "TODO: To implement the main job"
+          command: "echo TODO: To implement the main job"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
